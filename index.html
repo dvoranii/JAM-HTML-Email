@@ -4,10 +4,14 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="format-detection"
+      content="telephone=no, date=no, address=no, email=no"
+    />
 
     <!--[if !mso]><!-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
     <link
       href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap"
       rel="stylesheet"
@@ -19,14 +23,48 @@
     <!--<![endif]-->
     <title>JAM HTML Email</title>
 
-    <style media="screen and (prefers-color-scheme: dark)">
-      h2 a,
-      h2 span {
-        color: #555555 !important;
-        text-decoration: none !important;
-      }
-      .banner-bg {
-        background-color: #b30838 !important;
+    <!--[if mso]>
+      <style type="text/css">
+        body,
+        table,
+        td {
+          font-family: Arial, Helvetica, sans-serif !important;
+        }
+
+        p a,
+        p span {
+          color: #000000 !important;
+          text-decoration: none !important;
+        }
+
+        .bullet-table {
+          margin-bottom: 10px !important;
+        }
+
+        .bullet-cell {
+          padding-top: 2px !important;
+          vertical-align: top !important;
+        }
+
+        .text-cell {
+          padding-top: 0px !important;
+          vertical-align: top !important;
+          padding-left: 8px !important;
+        }
+      </style>
+    <![endif]-->
+
+    <style type="text/css">
+      @media only screen and (max-width: 600px) {
+        .two-column-table {
+          display: block !important;
+          width: 100% !important;
+        }
+
+        .two-column-cell {
+          display: block !important;
+          width: 100% !important;
+        }
       }
     </style>
   </head>
@@ -38,17 +76,26 @@
       mso-bg-dark: #b30838;
     "
   >
-    <!--[if mso]>
-      <style type="text/css">
-        body,
-        table,
-        td {
-          font-family: Arial, Helvetica, sans-serif !important;
-        }
-      </style>
-    <![endif]-->
+    <h1
+      style="
+        position: absolute;
+        left: -10000px;
+        top: auto;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+        font-size: 1px;
+        line-height: 1px;
+        mso-hide: all;
+      "
+    >
+      Event Details: Meet & Greet with John Sample
+    </h1>
 
     <table
+      role="presentation"
       width="100%"
       border="0"
       cellpadding="0"
@@ -56,8 +103,9 @@
       style="background-color: #ffffff; width: 100%; table-layout: fixed"
     >
       <tr>
-        <td align="center" style="padding: 40px 0 60px">
-          <!-- Main Container -->
+        <td align="center">
+          <!-- Outlook 2007+ (MSO clients) -->
+          <!--[if mso]>
           <table
             width="600"
             border="0"
@@ -67,6 +115,25 @@
             style="
               background-color: #fff;
               width: 600px;
+              border-spacing: 0;
+              font-family: Arial, Helvetica, sans-serif;
+              color: #171a1b;
+            "
+            bgcolor="#fff"
+          >
+          <![endif]-->
+          <!-- Modern Email Clients -->
+          <!--[if !mso]><!-->
+          <table
+            role="presentation"
+            width="100%"
+            border="0"
+            cellpadding="0"
+            cellspacing="0"
+            align="center"
+            style="
+              background-color: #fff;
+              width: 100%;
               max-width: 600px;
               border-spacing: 0;
               font-family: Arial, Helvetica, sans-serif;
@@ -74,13 +141,19 @@
             "
             bgcolor="#fff"
           >
+            <!--<![endif]-->
             <!--Top white strip  -->
             <tr>
               <td
-                style="background-color: #ffffff; height: 27px; padding: 0"
+                style="
+                  background-color: #ffffff;
+                  height: 27px;
+                  padding-top: 12px;
+                "
                 bgcolor="#ffffff"
               >
                 <table
+                  role="presentation"
                   width="100%"
                   style="max-width: 600px"
                   border="0"
@@ -88,44 +161,66 @@
                   cellspacing="0"
                 >
                   <tr>
-                    <td align="right" style="color: #6e6e6e; font-size: 11px">
+                    <td
+                      width="100%"
+                      style="padding: 0; line-height: 1px; font-size: 1px"
+                    >
+                      &nbsp;
+                    </td>
+
+                    <td
+                      align="right"
+                      style="color: #6e6e6e; font-size: 11px; text-align: right"
+                      height="27"
+                    >
                       <table
+                        role="presentation"
                         align="right"
                         cellpadding="0"
                         cellspacing="0"
                         border="0"
-                        style="display: inline-table; height: 27px"
+                        style="text-align: right"
                       >
                         <tr>
                           <td
                             style="
                               border: 1px solid #000;
-                              padding: 0px 0px 0px 0px;
+                              padding: 0px 5px;
+                              text-align: right;
+                              height: 27px;
+                              white-space: nowrap;
+                              min-width: 216px;
+                              width: auto !important;
                             "
+                            align="right"
                           >
-                            <a
-                              href="#"
-                              target="_blank"
-                              style="
-                                color: #6e6e6e;
-                                text-decoration: none;
-                                font-size: 11px;
-                                display: inline-block;
-                              "
-                              >View in browser</a
+                            <span
+                              style="white-space: nowrap; display: inline-block"
                             >
-                            |
-                            <a
-                              href="#"
-                              target="_blank"
-                              style="
-                                color: #6e6e6e;
-                                text-decoration: none;
-                                font-size: 11px;
-                                display: inline-block;
-                              "
-                              >Voir ce courriel en français</a
-                            >
+                              <a
+                                href="https://jam-html-email.vercel.app/"
+                                target="_blank"
+                                style="
+                                  color: #6e6e6e;
+                                  text-decoration: none;
+                                  font-size: 11px;
+                                  display: inline-block;
+                                "
+                                >View&nbsp;in&nbsp;browser</a
+                              >
+                              |
+                              <a
+                                href="https://jam-html-email.vercel.app/"
+                                target="_blank"
+                                style="
+                                  color: #6e6e6e;
+                                  text-decoration: none;
+                                  font-size: 11px;
+                                  display: inline-block;
+                                "
+                                >Voir&nbsp;ce&nbsp;courriel&nbsp;en&nbsp;français</a
+                              >
+                            </span>
                           </td>
                         </tr>
                       </table>
@@ -137,496 +232,444 @@
 
             <!-- Main Banner -->
 
-            <tr>
-              <td
-                class="banner-bg"
-                style="
-                  background-color: #b30838;
-                  mso-bgcolor-alt: #b30838;
-                  height: 100px;
-                  padding: 0 20px;
-                "
-                bgcolor="#B30838"
-              >
-                <table
-                  width="100%"
-                  style="max-width: 600px"
-                  border="0"
-                  cellpadding="0"
-                  cellspacing="0"
-                >
-                  <tr>
-                    <td
-                      align="left"
-                      valign="middle"
-                      style="height: 100px; color: #ffffff; font-size: 40px"
-                    >
-                      <img
-                        src="https://i.ibb.co/9B9nFFL/Jam-Logo.png"
-                        alt="JAM"
-                        style="border: 0; display: block; max-height: 60px"
-                        width="63.76"
-                        height="60"
-                      />
-                    </td>
-                  </tr>
-                </table>
-              </td>
-            </tr>
-
             <!-- Body Content Section -->
             <tr>
               <td style="padding: 0">
                 <table
+                  role="presentation"
                   width="100%"
                   border="0"
                   cellpadding="0"
                   cellspacing="0"
-                  style="max-width: 600px; margin: 0 auto"
+                  style="
+                    max-width: 600px;
+                    margin: 0 auto;
+                    border: 1px solid #cccccc;
+                  "
                 >
-                  <!-- Title and Intro -->
                   <tr>
-                    <td style="padding: 12px 32px 0 32px">
+                    <td
+                      class="banner-bg"
+                      style="
+                        mso-bgcolor-alt: #b30838;
+                        height: 100px;
+                        padding-right: 20px;
+                        padding-left: 20px;
+                        background-color: #b30838;
+                      "
+                      bgcolor="#b30838"
+                      height="100"
+                    >
                       <table
+                        role="presentation"
                         width="100%"
-                        style="max-width: 536px; margin: 0 auto"
-                        align="center"
+                        style="max-width: 600px"
                         border="0"
                         cellpadding="0"
                         cellspacing="0"
                       >
                         <tr>
                           <td
+                            align="left"
+                            valign="middle"
                             style="
-                              text-align: center;
-                              font-family: 'Oswald', Arial, Helvetica,
-                                sans-serif;
-                              font-size: 40px;
-                              font-weight: normal;
-                              color: #171a1b;
-                              line-height: 1.2;
+                              height: 100px;
+                              color: #ffffff;
+                              font-size: 32px;
                             "
-                            align="center"
                           >
                             <img
-                              src="https://i.ibb.co/Kp8zntQv/title-parallelogram.png"
-                              width="400"
-                              alt="We're excited to see you."
-                              style="display: block; border: 0; margin: 0 auto"
-                            />
-                          </td>
-                        </tr>
-                      </table>
-
-                      <!-- Paragraph with bottom padding instead of margin -->
-                      <table
-                        width="100%"
-                        border="0"
-                        style="max-width: 536px; margin: 0 auto"
-                        align="center"
-                        cellpadding="0"
-                        cellspacing="0"
-                      >
-                        <tr>
-                          <td
-                            style="
-                              padding-bottom: 30px;
-                              padding-top: 30px;
-                              text-align: left;
-                            "
-                            align="left"
-                          >
-                            <p
+                              src="https://i.ibb.co/9B9nFFL/Jam-Logo.png"
+                              alt="JAM"
                               style="
-                                font-family: 'Roboto', Arial, Helvetica,
-                                  sans-serif;
-                                font-size: 16px;
-                                font-weight: 100;
-                                color: #000000;
-                                margin: 0;
-                                line-height: 1.2;
-                                text-align: left;
+                                border: 0;
+                                display: block;
+                                max-height: 60px;
                               "
-                            >
-                              &lt;John&gt;, with the event fast approaching, we
-                              wanted to give you a breakdown of what we'll be
-                              doing at our meet &amp; greet with &lt;John
-                              Sample&gt; on ​Fri​day​&nbsp;​mor​ning.
-                            </p>
+                              width="63.76"
+                              height="60"
+                            />
                           </td>
                         </tr>
                       </table>
                     </td>
                   </tr>
-
-                  <!-- 490px Wide Content Section -->
                   <tr>
                     <td style="padding: 0">
                       <table
+                        role="presentation"
                         width="100%"
                         border="0"
                         cellpadding="0"
                         cellspacing="0"
                         style="max-width: 600px; margin: 0 auto"
                       >
+                        <!-- Title and Intro -->
                         <tr>
-                          <td style="padding-left: 55px; padding-right: 55px">
+                          <td style="padding: 12px 32px 0 32px">
                             <table
+                              role="presentation"
+                              width="100%"
+                              style="max-width: 536px; margin: 0 auto"
+                              border="0"
+                              cellpadding="0"
+                              cellspacing="0"
+                            >
+                              <tr>
+                                <td
+                                  style="
+                                    text-align: center;
+                                    font-family: 'Oswald', Arial, Helvetica,
+                                      sans-serif;
+                                    font-size: 40px;
+                                    font-weight: normal;
+                                    color: #171a1b;
+                                    line-height: 1.2;
+                                  "
+                                >
+                                  <img
+                                    src="https://i.ibb.co/Kp8zntQv/title-parallelogram.png"
+                                    width="400"
+                                    alt="We're excited to see you."
+                                    style="
+                                      display: block;
+                                      border: 0;
+                                      margin: 0 auto;
+                                    "
+                                  />
+                                </td>
+                              </tr>
+                            </table>
+
+                            <!-- Paragraph with bottom padding instead of margin -->
+                            <table
+                              role="presentation"
+                              width="100%"
+                              border="0"
+                              style="max-width: 536px; margin: 0 auto"
+                              cellpadding="0"
+                              cellspacing="0"
+                            >
+                              <tr>
+                                <td
+                                  style="
+                                    padding-bottom: 30px;
+                                    padding-top: 30px;
+                                    text-align: left;
+                                  "
+                                  align="left"
+                                >
+                                  <p
+                                    style="
+                                      font-family: 'Roboto', Arial, Helvetica,
+                                        sans-serif;
+                                      font-size: 16px;
+                                      font-weight: 100;
+                                      color: #000000;
+                                      margin: 0;
+                                      line-height: 1.2;
+                                      text-align: left;
+                                    "
+                                  >
+                                    &lt;John&gt;, with the event fast
+                                    approaching, we wanted to give you a
+                                    breakdown of what we'll be doing at our meet
+                                    &amp; greet with &lt;John Sample&gt; on
+                                    Friday&zwnj;&nbsp;morning.
+                                  </p>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+
+                        <!-- 490px Wide Content Section -->
+                        <tr>
+                          <td style="padding: 0">
+                            <table
+                              role="presentation"
                               width="100%"
                               border="0"
                               cellpadding="0"
                               cellspacing="0"
-                              style="
-                                max-width: 490px;
-                                width: 100%;
-                                margin: 0 auto;
-                              "
+                              style="max-width: 600px; margin: 0 auto"
                             >
-                              <!-- FIRST Content Row -->
                               <tr>
                                 <td
-                                  style="padding: 0 0 20px 0; text-align: left"
-                                  align="left"
+                                  style="
+                                    padding-left: 55px;
+                                    padding-right: 55px;
+                                  "
                                 >
-                                  <h2
-                                    style="
-                                      font-family: 'Roboto', Arial, Helvetica,
-                                        sans-serif;
-                                      font-weight: 900;
-                                      font-size: 22px;
-                                      color: #555555;
-                                      margin: 0 0 15px 0;
-                                    "
-                                  >
-                                    <span
-                                      style="
-                                        color: #555555;
-                                        text-decoration: none;
-                                      "
-                                      >8​&#58;​30 ​AM&#8211;9​&#58;​30 ​AM</span
-                                    >
-                                  </h2>
-
-                                  <table
-                                    width="100%"
-                                    border="0"
-                                    cellpadding="0"
-                                    cellspacing="0"
-                                    style="margin-bottom: 10px"
-                                  >
-                                    <tr>
-                                      <td width="12" valign="top">
-                                        <!-- Transparent spacer to push the bullet down -->
-                                        <table
-                                          width="100%"
-                                          border="0"
-                                          cellpadding="0"
-                                          cellspacing="0"
-                                        >
-                                          <tr>
-                                            <td
-                                              style="
-                                                height: 12px;
-                                                font-size: 0;
-                                                line-height: 0;
-                                              "
-                                            >
-                                              &nbsp;
-                                            </td>
-                                          </tr>
-                                          <tr>
-                                            <td>
-                                              <img
-                                                src="https://i.ibb.co/35dc2rsK/custom-bullet.png"
-                                                alt="•"
-                                                width="4"
-                                                height="4"
-                                                style="
-                                                  display: block;
-                                                  border: 0;
-                                                "
-                                              />
-                                            </td>
-                                          </tr>
-                                        </table>
-                                      </td>
-                                      <td
-                                        valign="top"
-                                        style="
-                                          font-family: 'Roboto', Arial,
-                                            sans-serif;
-                                          font-weight: 100;
-                                          font-size: 16px;
-                                          color: #000000;
-                                        "
-                                      >
-                                        Meet in VIP Room of
-                                        <span style="color: #b30838"
-                                          >Maurice-Richard Arena</span
-                                        >, located near the North entrance
-                                      </td>
-                                    </tr>
-                                  </table>
-
-                                  <table
-                                    width="100%"
-                                    border="0"
-                                    cellpadding="0"
-                                    cellspacing="0"
-                                    style="margin-bottom: 10px"
-                                  >
-                                    <tr>
-                                      <td width="12" valign="top">
-                                        <table
-                                          width="100%"
-                                          border="0"
-                                          cellpadding="0"
-                                          cellspacing="0"
-                                        >
-                                          <tr>
-                                            <td
-                                              style="
-                                                height: 12px;
-                                                font-size: 0;
-                                                line-height: 0;
-                                              "
-                                            >
-                                              &nbsp;
-                                            </td>
-                                          </tr>
-                                          <tr>
-                                            <td>
-                                              <img
-                                                src="https://i.ibb.co/35dc2rsK/custom-bullet.png"
-                                                alt="•"
-                                                width="4"
-                                                height="4"
-                                                style="
-                                                  display: block;
-                                                  border: 0;
-                                                "
-                                              />
-                                            </td>
-                                          </tr>
-                                        </table>
-                                      </td>
-                                      <td
-                                        valign="top"
-                                        style="
-                                          font-family: 'Roboto', Arial,
-                                            sans-serif;
-                                          font-weight: 100;
-                                          font-size: 16px;
-                                          color: #000000;
-                                        "
-                                      >
-                                        Enjoy a light breakfast with us
-                                      </td>
-                                    </tr>
-                                  </table>
-                                </td>
-                              </tr>
-
-                              <!-- SEPARATOR LINE -->
-                              <tr>
-                                <td style="padding: 0">
                                   <table
                                     role="presentation"
-                                    cellpadding="0"
-                                    cellspacing="0"
-                                  >
-                                    <tr>
-                                      <td
-                                        width="122"
-                                        height="4"
-                                        bgcolor="#b30838"
-                                        style="
-                                          width: 122px;
-                                          height: 4px;
-                                          background: #b30838;
-                                          font-size: 0;
-                                          line-height: 0;
-                                        "
-                                      >
-                                        &nbsp;
-                                      </td>
-                                    </tr>
-                                  </table>
-                                </td>
-                              </tr>
-
-                              <!-- SECOND Content Row -->
-
-                              <tr>
-                                <td style="padding: 20px 0 20px 0">
-                                  <!-- Two Column Layout -->
-                                  <table
                                     width="100%"
                                     border="0"
                                     cellpadding="0"
                                     cellspacing="0"
-                                    height="197"
+                                    style="
+                                      max-width: 490px;
+                                      width: 100%;
+                                      margin: 0 auto;
+                                    "
                                   >
+                                    <!-- FIRST Content Row -->
                                     <tr>
-                                      <td
-                                        style="
-                                          padding: 0;
-                                          font-size: 0;
-                                          text-align: center;
-                                        "
-                                        align="center"
-                                      >
-                                        <!--[if mso]>
-                                      <table width="100%" border="0" cellpadding="0" cellspacing="0">
-                                      <tr>
-                                      <td width="295" valign="top">
-                                      <![endif]-->
+                                      <td style="text-align: left" align="left">
+                                        <h2
+                                          style="
+                                            font-family: 'Roboto', Arial,
+                                              Helvetica, sans-serif;
+                                            font-weight: 900;
+                                            font-size: 22px;
+                                            color: #555555;
+                                            margin: 0 0 15px 0;
+                                          "
+                                        >
+                                          <span
+                                            style="
+                                              color: #555555;
+                                              text-decoration: none;
+                                            "
+                                            >8​&#58;​30 ​AM&#8211;9​&#58;​30
+                                            ​AM</span
+                                          >
+                                        </h2>
 
-                                        <!-- Column 1: Bullet List -->
+                                        <!-- SIMPLIFIED BULLET STRUCTURE -->
                                         <table
+                                          role="presentation"
                                           width="100%"
                                           border="0"
                                           cellpadding="0"
                                           cellspacing="0"
-                                          style="
-                                            display: inline-block;
-                                            vertical-align: middle;
-                                            width: 100%;
-                                            max-width: 295px;
-                                            text-align: left;
-                                            height: 197px;
-                                          "
-                                          align="left"
+                                          class="bullet-table"
+                                        >
+                                          <tr>
+                                            <td
+                                              width="12"
+                                              valign="middle"
+                                              class="bullet-cell"
+                                              style="
+                                                padding-top: 2px;
+                                                vertical-align: middle;
+                                              "
+                                            >
+                                              <img
+                                                src="https://i.ibb.co/35dc2rsK/custom-bullet.png"
+                                                alt="•"
+                                                width="4"
+                                                height="4"
+                                                style="
+                                                  display: block;
+                                                  border: 0;
+                                                "
+                                              />
+                                            </td>
+                                            <td
+                                              valign="top"
+                                              class="text-cell"
+                                              style="
+                                                font-family: 'Roboto', Arial,
+                                                  sans-serif;
+                                                font-weight: 100;
+                                                font-size: 16px;
+                                                color: #000000;
+                                                padding-left: 8px;
+                                                vertical-align: top;
+                                              "
+                                            >
+                                              Meet in VIP Room of
+                                              <span style="color: #b30838"
+                                                >Maurice-Richard Arena</span
+                                              >, located near the North entrance
+                                            </td>
+                                          </tr>
+                                        </table>
+
+                                        <table
+                                          role="presentation"
+                                          width="100%"
+                                          border="0"
+                                          cellpadding="0"
+                                          cellspacing="0"
+                                          class="bullet-table"
+                                          style="margin-top: 10px"
+                                        >
+                                          <tr>
+                                            <td
+                                              width="12"
+                                              valign="middle"
+                                              class="bullet-cell"
+                                              style="
+                                                padding-top: 2px;
+                                                vertical-align: middle;
+                                              "
+                                            >
+                                              <img
+                                                src="https://i.ibb.co/35dc2rsK/custom-bullet.png"
+                                                alt="•"
+                                                width="4"
+                                                height="4"
+                                                style="
+                                                  display: block;
+                                                  border: 0;
+                                                "
+                                              />
+                                            </td>
+                                            <td
+                                              valign="top"
+                                              class="text-cell"
+                                              style="
+                                                font-family: 'Roboto', Arial,
+                                                  sans-serif;
+                                                font-weight: 100;
+                                                font-size: 16px;
+                                                color: #000000;
+                                                padding-left: 8px;
+                                                vertical-align: top;
+                                              "
+                                            >
+                                              Enjoy a light breakfast with us
+                                            </td>
+                                          </tr>
+                                        </table>
+                                      </td>
+                                    </tr>
+
+                                    <!-- SEPARATOR LINE -->
+                                    <tr>
+                                      <td style="padding-top: 48px">
+                                        <table
+                                          role="presentation"
+                                          cellpadding="0"
+                                          cellspacing="0"
+                                        >
+                                          <tr>
+                                            <td
+                                              width="122"
+                                              height="4"
+                                              bgcolor="#b30838"
+                                              style="
+                                                width: 122px;
+                                                height: 4px;
+                                                background: #b30838;
+                                                font-size: 0;
+                                                line-height: 0;
+                                              "
+                                            >
+                                              &nbsp;
+                                            </td>
+                                          </tr>
+                                        </table>
+                                      </td>
+                                    </tr>
+
+                                    <!-- SECOND Content Row - Two Column Layout ONLY -->
+                                    <tr>
+                                      <td style="padding: 16px 0 20px 0">
+                                        <!-- Two Column Layout - FIXED VERSION -->
+                                        <table
+                                          role="presentation"
+                                          width="100%"
+                                          border="0"
+                                          cellpadding="0"
+                                          cellspacing="0"
                                         >
                                           <tr>
                                             <td
                                               style="
                                                 padding: 0;
-                                                vertical-align: middle;
-                                                height: 197px;
+                                                font-size: 0;
+                                                text-align: center;
                                               "
+                                              align="center"
                                             >
+                                              <!--[if mso]>
+                                                <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                                                <tr>
+                                                <td width="295" valign="middle" style="width: 295px; height: 197px;">
+                                                <![endif]-->
+
+                                              <!-- Column 1: Bullet List -->
                                               <table
+                                                role="presentation"
                                                 width="100%"
                                                 border="0"
                                                 cellpadding="0"
                                                 cellspacing="0"
+                                                style="
+                                                  display: inline-block;
+                                                  vertical-align: middle;
+                                                  width: 60%;
+                                                  min-width: 280px;
+                                                  max-width: 320px;
+                                                  text-align: left;
+                                                  height: 197px;
+                                                "
+                                                align="left"
                                               >
                                                 <tr>
-                                                  <td style="padding-top: 12px">
-                                                    <h2
-                                                      style="
-                                                        font-family: 'Roboto',
-                                                          Arial, Helvetica,
-                                                          sans-serif;
-                                                        font-weight: 900;
-                                                        font-size: 22px;
-                                                        color: #555555;
-                                                        margin: 0 0 15px 0;
-                                                        text-align: left;
-                                                      "
-                                                    >
-                                                      9​&#58;​30​&nbsp;AM&#8211;​11​&#58;​45​&nbsp;AM
-                                                    </h2>
-                                                    <!-- Bullet 1 -->
+                                                  <td
+                                                    style="
+                                                      padding: 0;
+                                                      vertical-align: middle;
+                                                      height: 197px;
+                                                      padding-top: 12px;
+                                                    "
+                                                    valign="middle"
+                                                  >
                                                     <table
+                                                      role="presentation"
                                                       width="100%"
                                                       border="0"
                                                       cellpadding="0"
                                                       cellspacing="0"
                                                       style="
-                                                        margin-bottom: 10px;
+                                                        vertical-align: middle;
                                                       "
                                                     >
                                                       <tr>
                                                         <td
-                                                          width="12"
-                                                          valign="top"
-                                                        >
-                                                          <table
-                                                            width="100%"
-                                                            border="0"
-                                                            cellpadding="0"
-                                                            cellspacing="0"
-                                                          >
-                                                            <tr>
-                                                              <td
-                                                                style="
-                                                                  height: 12px;
-                                                                  font-size: 0;
-                                                                  line-height: 0;
-                                                                "
-                                                              >
-                                                                &nbsp;
-                                                              </td>
-                                                            </tr>
-                                                            <tr>
-                                                              <td>
-                                                                <img
-                                                                  src="https://i.ibb.co/35dc2rsK/custom-bullet.png"
-                                                                  alt="•"
-                                                                  width="4"
-                                                                  height="4"
-                                                                  style="
-                                                                    display: block;
-                                                                    border: 0;
-                                                                  "
-                                                                />
-                                                              </td>
-                                                            </tr>
-                                                          </table>
-                                                        </td>
-                                                        <td
-                                                          valign="top"
                                                           style="
-                                                            font-family: 'Roboto',
-                                                              Arial, sans-serif;
-                                                            font-weight: 100;
-                                                            font-size: 16px;
-                                                            color: #000000;
-                                                            line-height: 1.2;
+                                                            vertical-align: middle;
                                                           "
                                                         >
-                                                          Watch &lt;John&gt;
-                                                          train on ice
-                                                        </td>
-                                                      </tr>
-                                                    </table>
+                                                          <h2
+                                                            style="
+                                                              font-family: 'Roboto',
+                                                                Arial, Helvetica,
+                                                                sans-serif;
+                                                              font-weight: 900;
+                                                              font-size: 22px;
+                                                              color: #555555;
+                                                              margin: 0 0 15px 0;
+                                                              text-align: left;
+                                                            "
+                                                          >
+                                                            9​&#58;​30​&nbsp;AM&#8211;​11​&#58;​45​&nbsp;AM
+                                                          </h2>
 
-                                                    <!-- Bullet 2 -->
-                                                    <table
-                                                      width="100%"
-                                                      border="0"
-                                                      cellpadding="0"
-                                                      cellspacing="0"
-                                                      style="
-                                                        margin-bottom: 10px;
-                                                      "
-                                                    >
-                                                      <tr>
-                                                        <td
-                                                          width="12"
-                                                          valign="top"
-                                                        >
+                                                          <!-- Bullet 1 -->
                                                           <table
+                                                            role="presentation"
                                                             width="100%"
                                                             border="0"
                                                             cellpadding="0"
                                                             cellspacing="0"
+                                                            style="
+                                                              margin-bottom: 10px;
+                                                            "
                                                           >
                                                             <tr>
                                                               <td
+                                                                width="12"
+                                                                valign="middle"
                                                                 style="
-                                                                  height: 12px;
-                                                                  font-size: 0;
-                                                                  line-height: 0;
+                                                                  padding-top: 2px;
+                                                                  vertical-align: middle;
                                                                 "
                                                               >
-                                                                &nbsp;
-                                                              </td>
-                                                            </tr>
-                                                            <tr>
-                                                              <td>
                                                                 <img
                                                                   src="https://i.ibb.co/35dc2rsK/custom-bullet.png"
                                                                   alt="•"
@@ -638,60 +681,45 @@
                                                                   "
                                                                 />
                                                               </td>
+                                                              <td
+                                                                valign="top"
+                                                                style="
+                                                                  font-family: 'Roboto',
+                                                                    Arial,
+                                                                    sans-serif;
+                                                                  font-weight: 100;
+                                                                  font-size: 16px;
+                                                                  color: #000000;
+                                                                  padding-left: 8px;
+                                                                  vertical-align: top;
+                                                                  line-height: 1.2;
+                                                                "
+                                                              >
+                                                                Watch&nbsp;&lt;John&gt;&nbsp;train&nbsp;on&nbsp;ice
+                                                              </td>
                                                             </tr>
                                                           </table>
-                                                        </td>
-                                                        <td
-                                                          valign="top"
-                                                          style="
-                                                            font-family: 'Roboto',
-                                                              Arial, sans-serif;
-                                                            font-weight: 100;
-                                                            font-size: 16px;
-                                                            color: #000000;
-                                                            line-height: 1.2;
-                                                          "
-                                                        >
-                                                          Tour her training
-                                                          facilities
-                                                        </td>
-                                                      </tr>
-                                                    </table>
 
-                                                    <!-- Bullet 3 -->
-                                                    <table
-                                                      width="100%"
-                                                      border="0"
-                                                      cellpadding="0"
-                                                      cellspacing="0"
-                                                      style="
-                                                        margin-bottom: 10px;
-                                                      "
-                                                    >
-                                                      <tr>
-                                                        <td
-                                                          width="12"
-                                                          valign="top"
-                                                        >
+                                                          <!-- Bullet 2 -->
                                                           <table
+                                                            role="presentation"
                                                             width="100%"
                                                             border="0"
                                                             cellpadding="0"
                                                             cellspacing="0"
+                                                            style="
+                                                              margin-bottom: 10px;
+                                                            "
                                                           >
                                                             <tr>
                                                               <td
+                                                                width="12"
+                                                                valign="middle"
                                                                 style="
-                                                                  height: 12px;
-                                                                  font-size: 0;
-                                                                  line-height: 0;
+                                                                  padding-top: 2px;
+                                                                  vertical-align: middle;
                                                                 "
                                                               >
-                                                                &nbsp;
-                                                              </td>
-                                                            </tr>
-                                                            <tr>
-                                                              <td>
                                                                 <img
                                                                   src="https://i.ibb.co/35dc2rsK/custom-bullet.png"
                                                                   alt="•"
@@ -703,56 +731,45 @@
                                                                   "
                                                                 />
                                                               </td>
+                                                              <td
+                                                                valign="top"
+                                                                style="
+                                                                  font-family: 'Roboto',
+                                                                    Arial,
+                                                                    sans-serif;
+                                                                  font-weight: 100;
+                                                                  font-size: 16px;
+                                                                  color: #000000;
+                                                                  padding-left: 8px;
+                                                                  vertical-align: top;
+                                                                  line-height: 1.2;
+                                                                "
+                                                              >
+                                                                Tour&nbsp;her&nbsp;training&nbsp;facilities
+                                                              </td>
                                                             </tr>
                                                           </table>
-                                                        </td>
-                                                        <td
-                                                          valign="top"
-                                                          style="
-                                                            font-family: 'Roboto',
-                                                              Arial, sans-serif;
-                                                            font-weight: 100;
-                                                            font-size: 16px;
-                                                            color: #000000;
-                                                            line-height: 1.2;
-                                                          "
-                                                        >
-                                                          Q&A session
-                                                        </td>
-                                                      </tr>
-                                                    </table>
 
-                                                    <!-- Bullet 4 -->
-                                                    <table
-                                                      width="100%"
-                                                      border="0"
-                                                      cellpadding="0"
-                                                      cellspacing="0"
-                                                    >
-                                                      <tr>
-                                                        <td
-                                                          width="12"
-                                                          valign="top"
-                                                        >
+                                                          <!-- Bullet 3 -->
                                                           <table
+                                                            role="presentation"
                                                             width="100%"
                                                             border="0"
                                                             cellpadding="0"
                                                             cellspacing="0"
+                                                            style="
+                                                              margin-bottom: 10px;
+                                                            "
                                                           >
                                                             <tr>
                                                               <td
+                                                                width="12"
+                                                                valign="middle"
                                                                 style="
-                                                                  height: 12px;
-                                                                  font-size: 0;
-                                                                  line-height: 0;
+                                                                  padding-top: 2px;
+                                                                  vertical-align: middle;
                                                                 "
                                                               >
-                                                                &nbsp;
-                                                              </td>
-                                                            </tr>
-                                                            <tr>
-                                                              <td>
                                                                 <img
                                                                   src="https://i.ibb.co/35dc2rsK/custom-bullet.png"
                                                                   alt="•"
@@ -764,154 +781,156 @@
                                                                   "
                                                                 />
                                                               </td>
+                                                              <td
+                                                                valign="top"
+                                                                style="
+                                                                  font-family: 'Roboto',
+                                                                    Arial,
+                                                                    sans-serif;
+                                                                  font-weight: 100;
+                                                                  font-size: 16px;
+                                                                  color: #000000;
+                                                                  padding-left: 8px;
+                                                                  vertical-align: top;
+                                                                  line-height: 1.2;
+                                                                "
+                                                              >
+                                                                Q&A session
+                                                              </td>
                                                             </tr>
                                                           </table>
-                                                        </td>
-                                                        <td
-                                                          valign="top"
-                                                          style="
-                                                            font-family: 'Roboto',
-                                                              Arial, sans-serif;
-                                                            font-weight: 100;
-                                                            font-size: 16px;
-                                                            color: #000000;
-                                                            line-height: 1.2;
-                                                          "
-                                                        >
-                                                          Have your photo taken
-                                                          with &lt;John&gt;
+
+                                                          <!-- Bullet 4 -->
+                                                          <table
+                                                            role="presentation"
+                                                            width="100%"
+                                                            border="0"
+                                                            cellpadding="0"
+                                                            cellspacing="0"
+                                                          >
+                                                            <tr>
+                                                              <td
+                                                                width="12"
+                                                                valign="middle"
+                                                                style="
+                                                                  padding-top: 2px;
+                                                                  vertical-align: middle;
+                                                                "
+                                                              >
+                                                                <img
+                                                                  src="https://i.ibb.co/35dc2rsK/custom-bullet.png"
+                                                                  alt="•"
+                                                                  width="4"
+                                                                  height="4"
+                                                                  style="
+                                                                    display: block;
+                                                                    border: 0;
+                                                                  "
+                                                                />
+                                                              </td>
+                                                              <td
+                                                                valign="top"
+                                                                style="
+                                                                  font-family: 'Roboto',
+                                                                    Arial,
+                                                                    sans-serif;
+                                                                  font-weight: 100;
+                                                                  font-size: 16px;
+                                                                  color: #000000;
+                                                                  padding-left: 8px;
+                                                                  vertical-align: top;
+                                                                  line-height: 1.2;
+                                                                "
+                                                              >
+                                                                Have&nbsp;your&nbsp;photo&nbsp;taken&nbsp;with&nbsp;&lt;John&gt;
+                                                              </td>
+                                                            </tr>
+                                                          </table>
                                                         </td>
                                                       </tr>
                                                     </table>
                                                   </td>
                                                 </tr>
                                               </table>
-                                            </td>
-                                          </tr>
-                                        </table>
 
-                                        <!--[if mso]>
-                                      </td>
-                                      <td width="195" valign="middle">
-                                      <![endif]-->
+                                              <!--[if mso]>
+                                                </td>
+                                                <td width="195" valign="middle" style="width: 195px; height: 197px;">
+                                                <![endif]-->
 
-                                        <!-- Column 2: Avatar Image -->
-                                        <table
-                                          width="100%"
-                                          border="0"
-                                          cellpadding="0"
-                                          cellspacing="0"
-                                          align="center"
-                                          style="
-                                            display: inline-block;
-                                            vertical-align: middle;
-                                            width: 100%;
-                                            max-width: 195px;
-                                            margin: 0 auto;
-                                          "
-                                        >
-                                          <tr>
-                                            <td
-                                              align="center"
-                                              style="
-                                                text-align: center;
-                                                padding-top: 12px;
-                                              "
-                                            >
-                                              <img
-                                                src="https://i.ibb.co/pBmRwm2x/row-2-img.png"
-                                                alt="Profile Avatar"
+                                              <!-- Column 2: Avatar Image -->
+                                              <table
+                                                role="presentation"
+                                                width="100%"
+                                                border="0"
+                                                cellpadding="0"
+                                                cellspacing="0"
                                                 style="
-                                                  display: block;
-                                                  border: 0;
-
+                                                  display: inline-block;
+                                                  vertical-align: middle;
+                                                  width: 35%;
+                                                  min-width: 180px;
+                                                  max-width: 195px;
                                                   margin: 0 auto;
+                                                  height: 197px;
                                                 "
-                                              />
+                                                align="center"
+                                              >
+                                                <tr>
+                                                  <td
+                                                    align="center"
+                                                    style="
+                                                      text-align: center;
+                                                      vertical-align: middle;
+                                                      height: 197px;
+                                                      padding-top: 12px;
+                                                    "
+                                                    valign="middle"
+                                                  >
+                                                    <img
+                                                      src="https://i.ibb.co/pBmRwm2x/row-2-img.png"
+                                                      alt="Profile Avatar"
+                                                      style="
+                                                        display: block;
+                                                        border: 0;
+                                                        margin: 0 auto;
+                                                        max-height: 197px;
+                                                      "
+                                                      width="196"
+                                                      height="197"
+                                                    />
+                                                  </td>
+                                                </tr>
+                                              </table>
+
+                                              <!--[if mso]>
+                                                </td>
+                                                </tr>
+                                                </table>
+                                                <![endif]-->
                                             </td>
                                           </tr>
                                         </table>
-
-                                        <!--[if mso]>
-                                      </td>
-                                      </tr>
-                                      </table>
-                                      <![endif]-->
                                       </td>
                                     </tr>
-                                  </table>
-                                </td>
-                              </tr>
 
-                              <!-- SEPARATOR LINE -->
-                              <tr>
-                                <td style="padding: 0">
-                                  <table
-                                    role="presentation"
-                                    cellpadding="0"
-                                    cellspacing="0"
-                                  >
+                                    <!-- SEPARATOR LINE -->
                                     <tr>
-                                      <td
-                                        width="122"
-                                        height="4"
-                                        bgcolor="#b30838"
-                                        style="
-                                          width: 122px;
-                                          height: 4px;
-                                          background: #b30838;
-                                          font-size: 0;
-                                          line-height: 0;
-                                        "
-                                      >
-                                        &nbsp;
-                                      </td>
-                                    </tr>
-                                  </table>
-                                </td>
-                              </tr>
-
-                              <!-- THIRD Content Row -->
-                              <tr>
-                                <td
-                                  style="
-                                    padding: 20px 0 20px 0;
-                                    text-align: left;
-                                  "
-                                  align="left"
-                                >
-                                  <h2
-                                    style="
-                                      font-family: 'Roboto', Arial, Helvetica,
-                                        sans-serif;
-                                      font-weight: 900;
-                                      font-size: 22px;
-                                      color: #555555;
-                                      margin: 0 0 15px 0;
-                                    "
-                                  >
-                                    11​&#58;​45&nbsp;​AM
-                                  </h2>
-
-                                  <table
-                                    width="100%"
-                                    border="0"
-                                    cellpadding="0"
-                                    cellspacing="0"
-                                    style="margin-bottom: 10px"
-                                  >
-                                    <tr>
-                                      <td width="12" valign="top">
+                                      <td style="padding-top: 24px">
                                         <table
-                                          width="100%"
-                                          border="0"
+                                          role="presentation"
                                           cellpadding="0"
                                           cellspacing="0"
                                         >
                                           <tr>
                                             <td
+                                              width="122"
+                                              height="4"
+                                              bgcolor="#b30838"
                                               style="
-                                                height: 12px;
+                                                width: 122px;
+                                                height: 4px;
+                                                background: #b30838;
                                                 font-size: 0;
                                                 line-height: 0;
                                               "
@@ -919,8 +938,50 @@
                                               &nbsp;
                                             </td>
                                           </tr>
+                                        </table>
+                                      </td>
+                                    </tr>
+
+                                    <!-- THIRD Content Row - Single Column -->
+                                    <tr>
+                                      <td
+                                        style="
+                                          padding: 44px 0 44px 0;
+                                          text-align: left;
+                                        "
+                                        align="left"
+                                      >
+                                        <h2
+                                          style="
+                                            font-family: 'Roboto', Arial,
+                                              Helvetica, sans-serif;
+                                            font-weight: 900;
+                                            font-size: 22px;
+                                            color: #555555;
+                                            margin: 0 0 15px 0;
+                                          "
+                                        >
+                                          11​&#58;​45&nbsp;​AM
+                                        </h2>
+
+                                        <table
+                                          role="presentation"
+                                          width="100%"
+                                          border="0"
+                                          cellpadding="0"
+                                          cellspacing="0"
+                                          class="bullet-table"
+                                        >
                                           <tr>
-                                            <td>
+                                            <td
+                                              width="12"
+                                              valign="middle"
+                                              class="bullet-cell"
+                                              style="
+                                                padding-top: 2px;
+                                                vertical-align: middle;
+                                              "
+                                            >
                                               <img
                                                 src="https://i.ibb.co/35dc2rsK/custom-bullet.png"
                                                 alt="•"
@@ -932,20 +993,23 @@
                                                 "
                                               />
                                             </td>
+                                            <td
+                                              valign="top"
+                                              class="text-cell"
+                                              style="
+                                                font-family: 'Roboto', Arial,
+                                                  sans-serif;
+                                                font-weight: 100;
+                                                font-size: 16px;
+                                                color: #000000;
+                                                padding-left: 8px;
+                                                vertical-align: top;
+                                              "
+                                            >
+                                              Pick lunch to go
+                                            </td>
                                           </tr>
                                         </table>
-                                      </td>
-                                      <td
-                                        valign="top"
-                                        style="
-                                          font-family: 'Roboto', Arial,
-                                            sans-serif;
-                                          font-weight: 100;
-                                          font-size: 16px;
-                                          color: #000000;
-                                        "
-                                      >
-                                        Pick lunch to go
                                       </td>
                                     </tr>
                                   </table>
@@ -957,61 +1021,85 @@
                       </table>
                     </td>
                   </tr>
+                </table>
+              </td>
+            </tr>
 
-                  <!-- Footer -->
-
+            <!-- Footer -->
+            <tr>
+              <td>
+                <!-- Paragraph with bottom padding instead of margin -->
+                <table
+                  role="presentation"
+                  width="100%"
+                  border="0"
+                  style="margin: 0 auto"
+                  cellpadding="0"
+                  cellspacing="0"
+                >
                   <tr>
-                    <td style="padding: 12px 32px 0 32px">
-                      <!-- Paragraph with bottom padding instead of margin -->
-                      <table
-                        width="100%"
-                        border="0"
-                        style="max-width: 536px; margin: 0 auto"
-                        align="center"
-                        cellpadding="0"
-                        cellspacing="0"
+                    <td
+                      style="
+                        padding-bottom: 30px;
+                        padding-top: 24px;
+                        padding-left: 32px;
+                        padding-right: 32px;
+                        text-align: left;
+                        font-family: 'Roboto', Arial, Helvetica, sans-serif;
+                        font-size: 10px;
+                        color: #000000;
+                      "
+                      align="left"
+                    >
+                      <p
+                        style="
+                          font-family: 'Roboto', Arial, Helvetica, sans-serif;
+                          font-size: 10px;
+                          font-weight: 100;
+                          text-decoration: none !important;
+                          color: #000000;
+                          margin: 0;
+                          line-height: 1.2;
+                          text-align: left;
+                          -webkit-text-size-adjust: 100%;
+                          text-size-adjust: 100%;
+                          mso-line-height-alt: 12px;
+                        "
                       >
-                        <tr>
-                          <td
-                            style="
-                              padding-bottom: 30px;
-                              padding-top: 30px;
-                              text-align: left;
-                            "
-                            align="left"
-                          >
-                            <p
-                              style="
-                                font-family: 'Roboto', Arial, Helvetica,
-                                  sans-serif;
-                                font-size: 10px;
-                                font-weight: 100;
-                                color: #000000;
-                                margin: 0;
-                                line-height: 1.2;
-                                text-align: left;
-                              "
-                            >
-                              This email was sent to xxxxxxx@jamdirect.ca.
-                            </p>
-                            <p
-                              style="
-                                font-family: 'Roboto', Arial, Helvetica,
-                                  sans-serif;
-                                font-size: 10px;
-                                font-weight: 100;
-                                color: #000000;
-                                margin: 0;
-                                line-height: 1.2;
-                                text-align: left;
-                              "
-                            >
-                              JAM Direct I 67 Mowat Ave, Toronto, ON M6K 3E3 I
-                              Copyright © 2024, JAM Direct
-                            </p>
-                          </td>
-                        </tr>
-                      </table>
+                        This email was sent to
+                        <span
+                          style="
+                            color: #000000 !important;
+                            text-decoration: none !important;
+                            font-family: 'Roboto', Arial, Helvetica, sans-serif;
+                            font-size: 10px !important;
+                            font-weight: 100;
+                            -webkit-text-size-adjust: 100% !important;
+                            text-size-adjust: 100% !important;
+                          "
+                        >
+                          xxxxxxx&#8203;&#64;&#8203;jamdirect&#8203;&#46;&#8203;ca
+                        </span>
+                      </p>
+                      <p
+                        style="
+                          font-family: 'Roboto', Arial, Helvetica, sans-serif;
+                          font-size: 10px;
+                          font-weight: 100;
+                          color: #000000;
+                          margin: 0;
+                          line-height: 1.2;
+                          text-align: left;
+                          -webkit-text-size-adjust: 100%;
+                          text-size-adjust: 100%;
+                        "
+                      >
+                        JAM Direct |
+                        <span style="text-decoration: none"
+                          >67​ Mowat​ Ave​, Toronto​, ON​ M6K​ 3E3</span
+                        >
+                        | Copyright © 2024, JAM Direct
+                      </p>
                     </td>
                   </tr>
                 </table>
